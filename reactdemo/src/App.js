@@ -2,6 +2,7 @@
 import React from 'react';
 import './App.css';
 import Expenses from './component/Expenses/Expenses';
+import ExpenseForm from './component/NewExpense/ExpenseForm';
 
 const App=()=> {
   const expenses = [
@@ -31,6 +32,7 @@ const App=()=> {
     <div className="App">
       <header className="App-header">
         <p> Start With React </p>
+        <ExpenseForm/>
         <Expenses items={expenses} />
         
       </header>
