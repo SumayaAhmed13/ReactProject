@@ -27,12 +27,15 @@ const App=()=> {
     },
   ];
  
-
+  const expenseDataHandeler=expense=>{
+     console.log('app.js');
+     console.log(expense);
+  }
   return (
     <div className="App">
       <header className="App-header">
         <p> Start With React </p>
-        <ExpenseForm/>
+        <ExpenseForm onsaveData={expenseDataHandeler}/>
         <Expenses items={expenses} />
         
       </header>
